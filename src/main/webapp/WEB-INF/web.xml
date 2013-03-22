@@ -3,5 +3,13 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-  <display-name>Archetype Created Web Application</display-name>
+  <display-name>ZTree Demo</display-name>
+  <servlet>
+  	<servlet-name>asyncServlet</servlet-name>
+  	<servlet-class>com.lee.study.web.servelt.AsyncDataServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>asyncServlet</servlet-name>
+  	<url-pattern>/asyncData.do</url-pattern>
+  </servlet-mapping>
 </web-app>
